@@ -20,11 +20,12 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 app:srcCompat="@drawable/cablenetlogo" />
 
         </LinearLayout>
+
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,14 +74,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_menu_mapmode" />
+                app:srcCompat="@drawable/web" />
 
             <ImageButton
                 android:id="@+id/bonus"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@android:drawable/stat_notify_more" />
+                app:srcCompat="@drawable/limit" />
 
         </LinearLayout>
         <LinearLayout
@@ -173,7 +174,11 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:inputType="number" />
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"/>
+
+
 
             <ImageButton
                 android:id="@+id/dcallfwd"
@@ -228,5 +233,32 @@
                 android:layout_weight="1"
                 app:srcCompat="@drawable/sim" />
         </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#aa8cc5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Advertisements"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="12pt" />
+        </android.support.v7.widget.CardView>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView" android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-9082725429338291/2461681775">
+        </com.google.android.gms.ads.AdView>
     </LinearLayout>
 </LinearLayout>
