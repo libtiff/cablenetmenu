@@ -37,7 +37,7 @@
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:text="Mobile Plan"
+                android:text="Check Your Mobile Plan"
                 android:textAlignment="center"
                 android:textColor="#FFF"
 
@@ -139,7 +139,7 @@
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:text="Call Forwarding"
+                android:text="Enable Call Forwarding"
                 android:textAlignment="center"
                 android:textColor="#FFF"
                 android:textSize="12pt" />
