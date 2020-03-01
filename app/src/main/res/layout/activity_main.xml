@@ -5,228 +5,256 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:background="#663096"
-    tools:context="com.cablenetmenu.libtiff.cablenetmenu.MainActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_weight="100">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_weight="10">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                app:srcCompat="@drawable/cablenetlogo" />
+                app:srcCompat="@drawable/cablenetlogo"
+                android:layout_weight="100"/>
 
         </LinearLayout>
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="#aa8cc5">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#aa8cc5"
+        android:layout_weight="0.1">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:text="Check Your Mobile Plan"
-                android:textAlignment="center"
-                android:textColor="#FFF"
-
-                android:textSize="12pt" />
-        </android.support.v7.widget.CardView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/voice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:clickable="true"
-                app:srcCompat="@android:drawable/sym_action_call" />
-
-            <ImageButton
-                android:id="@+id/sms"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/sym_action_email" />
-
-            <ImageButton
-                android:id="@+id/data"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/web" />
-
-            <ImageButton
-                android:id="@+id/bonus"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/limit" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textAlignment="center"
-                android:textColor="#FFFF"
-                android:text="Calling  Minutes"/>
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:textColor="#FFFF"
-                android:text="Messages   Left"/>
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textAlignment="center"
-                android:textColor="#FFFF"
-                android:text="Available    Data"/>
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textAlignment="center"
-                android:textColor="#FFFF"
-                android:text="Credit         Limit"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:orientation="horizontal">
-
-        </LinearLayout>
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="#aa8cc5">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:text="Enable Call Forwarding"
-                android:textAlignment="center"
-                android:textColor="#FFF"
-                android:textSize="12pt" />
-
-        </android.support.v7.widget.CardView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/callfw"
-                android:layout_width="10dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/sym_call_outgoing" />
-
-            <EditText
-                android:id="@+id/txtnum"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:textColor="@color/white"
-                android:textColorHighlight="@color/white"/>
-
-            <ImageButton
-                android:id="@+id/dcallfwd"
-                android:layout_width="10dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/sym_call_missed" />
-
-        </LinearLayout>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="#aa8cc5">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:text="Additional Features"
-                android:textAlignment="center"
-                android:textColor="#FFF"
-                android:textSize="12pt" />
-        </android.support.v7.widget.CardView>
-
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_weight="20"
+            android:text="Check Your Mobile Plan"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="12pt" />
+
+    </android.support.v7.widget.CardView>
+
+    <!--SPACER BASED ON SCREEN SIZE -->
+    <LinearLayout
+        android:id="@+id/spacer1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal"
+        android:layout_weight="4.75">
+    </LinearLayout>
+    <!--SPACER -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.5">
+
+        <ImageButton
+            android:id="@+id/voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/sym_action_call" />
+
+        <ImageButton
+            android:id="@+id/sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/sym_action_email" />
+
+        <ImageButton
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:clickable="true"
+            app:srcCompat="@drawable/web" />
+
+        <ImageButton
+            android:id="@+id/bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:clickable="true"
+            app:srcCompat="@drawable/limit" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:text="Calling Minutes"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="25"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#FFFF"
+            android:text="Messages Left"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:text="Available Data"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:text="Credit Limit"/>
+    </LinearLayout>
+
+    <!--SPACER BASED ON SCREEN SIZE -->
+    <LinearLayout
+        android:id="@+id/spacer2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal"
+        android:layout_weight="4.75">
+    </LinearLayout>
+    <!--SPACER -->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#aa8cc5"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_weight="100"
+            android:text="Enable Call Forwarding"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="12pt" />
+
+    </android.support.v7.widget.CardView>
+
+    <!--SPACER BASED ON SCREEN SIZE -->
+    <LinearLayout
+        android:id="@+id/spacer3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+    </LinearLayout>
+    <!--SPACER -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.5">
+
+        <ImageButton
+            android:id="@+id/callfw"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            app:srcCompat="@android:drawable/sym_call_outgoing" />
+
+        <EditText
+            android:id="@+id/txtnum"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/dcallfwd"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            app:srcCompat="@android:drawable/sym_call_missed" />
+    </LinearLayout>
+
+    <!--SPACER BASED ON SCREEN SIZE -->
+    <LinearLayout
+        android:id="@+id/spacer4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+    </LinearLayout>
+    <!--SPACER -->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#aa8cc5"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_weight="20"
+            android:text="Additional Features"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="12pt" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.5">
         <ImageButton
             android:id="@+id/apn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="50"
             app:srcCompat="@android:drawable/ic_menu_manage" />
 
-            <ImageButton
-                android:id="@+id/toolkit"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/sim" />
-        </LinearLayout>
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="#aa8cc5">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:text="Advertisements"
-                android:textAlignment="center"
-                android:textColor="#FFF"
-                android:textSize="12pt" />
-        </android.support.v7.widget.CardView>
+        <ImageButton
+            android:id="@+id/toolkit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            app:srcCompat="@drawable/sim" />
+    </LinearLayout>
 
         <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"
@@ -236,7 +264,8 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-9082725429338291/3199792188">
+            ads:adUnitId="ca-app-pub-9082725429338291/3199792188"
+            android:layout_weight="20">
         </com.google.android.gms.ads.AdView>
     </LinearLayout>
-</LinearLayout>
+
